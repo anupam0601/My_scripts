@@ -21,7 +21,6 @@ def run():
         after = dict ([(f, None) for f in os.listdir (path_to_watch)])
         added = [f for f in after if not f in before]
         removed = [f for f in before if not f in after]
-        global a
 
         if added: 
         	print "Added: ", ", ".join (added)
